@@ -1,0 +1,8 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+rest_video:
+    type: rest
+    resource: "@VideoBundle/Resources/config/routing.yml"
+    prefix: /api

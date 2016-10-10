@@ -1,0 +1,4 @@
+services:
+  video_service:
+    class: VideoBundle\Service\VideoService
+    arguments: ['@doctrine.orm.entity_manager']

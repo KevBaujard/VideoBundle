@@ -1,0 +1,13 @@
+video:
+  type: rest
+  path: /video
+  defaults: {_controller: VideoBundle:Video:getVideo, _format: json }
+  requirements:
+    _method: GET
+
+videoid:
+  type: rest
+  path: /video/{id}
+  defaults: {_controller: VideoBundle:Video:getVideoById, _format: json }
+  requirements:
+    _method: GET
