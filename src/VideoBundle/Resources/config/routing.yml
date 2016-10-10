@@ -1,6 +1,6 @@
 video:
   type: rest
-  path: /video
+  path: /videos
   defaults: {_controller: VideoBundle:Video:getVideo, _format: json }
   requirements:
     _method: GET

@@ -18,7 +18,7 @@ class VideoControllerTest extends TestCase
 
     public function testGetVideoAction()
     {
-        $response = $this->client->get('video');
+        $response = $this->client->get('videos');
         $this->assertEquals(200, $response->getStatusCode());
 
         $data = json_decode($response->getBody());
