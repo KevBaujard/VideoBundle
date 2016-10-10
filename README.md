@@ -18,11 +18,11 @@ Il faut ensuite récupérer les dépendances manquantes avec un composer update
 2 .Création de la BDD
 
 Ce bundle a besoin d'une BDD pour fonctionner, il faut penser à modifier les informations de connexion dans le fichier app/config/parameters.yml
-Il faut ensuite créer la base: php bin/console doctrine:database:create, puis créer les tables: php bin/console doctrine:schema:update
+Il faut ensuite créer la base: php bin/console doctrine:database:create, puis créer les tables: `php bin/console doctrine:schema:update`
 
 3 .Utilisation
 
-Le projet est prêt à être utilisé: php bin/console server:start
+Le projet est prêt à être utilisé: `php bin/console server:start`
 
 
 2 - Ligne de commande: Ajout d'une video en BDD
@@ -30,7 +30,7 @@ Le projet est prêt à être utilisé: php bin/console server:start
 
 Une commande a été ajoutée à la liste des commandes disponible dans php bin/console.
 Cette commande permet d'ajouter une vidéo en BDD.
-exemple d'utilisation:  video:create nomRealisateur titre 20170112
+exemple d'utilisation:  `video:create nomRealisateur titre 20170112`
 
 3 - API: Récupération des vidéos
 --------------------------------
