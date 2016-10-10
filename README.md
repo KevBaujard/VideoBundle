@@ -18,7 +18,7 @@ Il faut ensuite récupérer les dépendances manquantes avec un composer update
 2 .Création de la BDD
 
 Ce bundle a besoin d'une BDD pour fonctionner, il faut penser à modifier les informations de connexion dans le fichier app/config/parameters.yml
-Il faut ensuite créer la base: php bin/console doctrine:database:create, puis créer les tables: `php bin/console doctrine:schema:update`
+Il faut ensuite créer la base: `php bin/console doctrine:database:create`, puis créer les tables: `php bin/console doctrine:schema:update`
 
 3 .Utilisation
 
@@ -30,7 +30,7 @@ Le projet est prêt à être utilisé: `php bin/console server:start`
 
 Une commande a été ajoutée à la liste des commandes disponible dans php bin/console.
 Cette commande permet d'ajouter une vidéo en BDD.
-exemple d'utilisation:  `video:create nomRealisateur titre 20170112`
+exemple d'utilisation:  `php bin/console video:create nomRealisateur titre 20170112`
 
 3 - API: Récupération des vidéos
 --------------------------------
@@ -50,7 +50,7 @@ exemple de retour:
 4 - Tests
 ---------
 
-Les tests unitaires supposent que la BDD utilise le jeu de données des fixtures.
+Les tests unitaires supposent que la BDD soit neuve(pas d'auto-increment) et utilise le jeu de données des fixtures.
 Pour insérer les fixtures il faut jouer la commande suivante: `php bin/console doctrine:fixtures:load`
 
 Ensuite pour jouer les tests il faut lancer `vendor/bin/phpunit` 
